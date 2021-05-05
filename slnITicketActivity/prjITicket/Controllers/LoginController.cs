@@ -76,20 +76,20 @@ namespace prjITicket.Controllers
         {
             google ms = JsonConvert.DeserializeObject<google>(returnUrl);
 
-            var member = db.Member.Where(x => x.Email == ms.du).FirstOrDefault();
+            var member = db.Member.Where(x => x.Email == ms.Rt).FirstOrDefault();
             if (member == null)
             {
                 Member m = new Member();
-                m.Email = ms.du;
-                m.Name = ms.Ad;
-                m.NickName = ms.Ad;
+                m.Email = ms.Rt;
+                m.Name = ms.Te;
+                m.NickName = ms.Te;
                 m.MemberRoleId = 2;
                 m.Point = 0;
                 m.providerGO = true;
                 m.fRegister_time = DateTime.Now;
                 db.Member.Add(m);
                 db.SaveChanges();
-                member = db.Member.Where(x => x.Email == ms.du).FirstOrDefault();
+                member = db.Member.Where(x => x.Email == ms.Rt).FirstOrDefault();
                 Session[CDictionary.SK_Logined_Member] = member;
                 
                 (Session[CDictionary.SK_Logined_Member] as Member).provider = "google";

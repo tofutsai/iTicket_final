@@ -161,7 +161,7 @@
         gapi.auth2.getAuthInstance().signIn().then(
             function (success) {
 
-                let member = JSON.stringify(success["xt"]);
+                let member = JSON.stringify(success["gt"]);
                 console.log(member);
                  $.ajax({
                  url:'@Url.Action("GoLogin")',

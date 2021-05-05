@@ -7,12 +7,12 @@ namespace prjITicket.Models
 {
     public class google
     {
-        public string OT { get; set; }
-        public string Ad { get; set; }
-        public string sV { get; set; }
-        public string vT { get; set; }
-        public string iK { get; set; }
-        public string du { get; set; }
+        public string GS { get; set; }
+        public string Te { get; set; }
+        public string rU { get; set; }
+        public string ms { get; set; }
+        public string zJ { get; set; }
+        public string Rt { get; set; }
      
     }
 }
