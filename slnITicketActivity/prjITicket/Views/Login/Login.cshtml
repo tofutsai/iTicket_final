@@ -7,6 +7,7 @@
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 @*驗證機器人*@
 <script src="~/Content/Login/functionJS/GoogleReCaptchaAPI.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lem78gaAAAAAL8omzOhhSOklM55TALf0CgD4nYv"></script>
 @*顯示或隱藏密碼*@
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 @*sweetalert*@
@@ -49,7 +50,7 @@
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
                                 <label for="remember-me" class="label-agree-term"><span><span></span></span>記住帳密</label>
                             </div>
-                            <div class="g-recaptcha " data-sitekey="6LdLEP8ZAAAAALCj9nZjFMuqSQjxfT-eZvtQNV-n" data-theme="dark"></div>
+                            <div class="g-recaptcha " data-sitekey="6Lfuq8oaAAAAAA5ulDvELEsCtZYU1DKVupRBOQlW" data-theme="dark"></div>
                             @*<div>
 
                         @ViewFunc.ReCaptchaWidget(Html, "signin", Url.Action("ValidateReCAPTCHA", "Login"), "dark")
